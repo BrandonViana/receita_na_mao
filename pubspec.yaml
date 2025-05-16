@@ -35,6 +35,9 @@ flutter:
     - family: OswaldBold
       fonts:
       - asset: assets/fonts/OswaldBold.ttf
+    - family: OpenSanst
+      fonts:
+      - asset: assets/fonts/OpenSanst.ttf 
   
 flutter_launcher_icons:
   android: true

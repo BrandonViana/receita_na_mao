@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:projetopet/common/constants/app_colors.dart';
-import 'package:projetopet/features/onboarding/onboarding_page.dart';
+import 'package:projetopet/features/Login/login_page.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -32,7 +32,7 @@ class _SplashPageState extends State<SplashPage>
             transitionDuration: const Duration(milliseconds: 800),
             pageBuilder:
                 (context, animation, secondaryAnimation) =>
-                    const OnboardingPage(),
+                    const LoginPage(),
             transitionsBuilder: (
               context,
               animation,
@@ -56,7 +56,7 @@ class _SplashPageState extends State<SplashPage>
           gradient: LinearGradient(
             begin: Alignment.centerLeft,
             end: Alignment.centerRight,
-            colors: AppColors.babyblueGradient,
+            colors: AppColors.orangeGradient,
             stops: const [0.0, 0.5, 1.0],
           ),
         ),
@@ -65,9 +65,9 @@ class _SplashPageState extends State<SplashPage>
           curve: Curves.easeOutBack,
           scale: _scale,
           child: Image.asset(
-            'assets/Image/logo.png',
-            width: 150,
-            height: 150,
+            'assets/Image/logochefe.png',
+            width: 250,
+            height: 250,
             alignment: Alignment.center,
           ),
         ),

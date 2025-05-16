@@ -6,11 +6,13 @@ class AppColors {
   static const Color babyBlue1 = Color(0xFF89CFF0);
   static const Color babyBlue2 = Color(0xFF0396c7);
   static const Color blueBorder = Color(0xFF04B3FB);
-  static const List<Color> babyblueGradient = [
-    Color(0xFF04B3FB),
-    Color(0xFF1FB8FA),
-    Color(0xFF36BCF9),
+  static const List<Color> orangeGradient = [
+   Color(0xFFFF9E2C), // equivalente ao azul mais claro
+  Color(0xFFFF9925), // tom intermediário
+  Color(0xFFFF941F),
   ];
+  static const Color orange = Color(0xFFFF9800);
+
   static const Color white = Color(0xFFFFFFFF);
   static const Color navyBlue = Color(0xFF001969);
   static const Color grey = Color(0xFF444444);

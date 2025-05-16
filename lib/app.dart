@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:projetopet/features/onboarding/onboarding_page.dart';
-import 'package:projetopet/features/splash/splash_page.dart';
+import 'package:projetopet/features/Login/login_page.dart';
 import 'package:projetopet/common/constants/app_colors.dart';
 import 'package:projetopet/common/constants/app_text_styles.dart';
 
@@ -26,7 +25,7 @@ class App extends StatelessWidget {
           ),
         ),
       ),
-      home: SplashPage(),
+      home: LoginPage(),
     );
   }
 }
