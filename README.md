@@ -43,6 +43,6 @@ flutter run
 ## 📸 Preview  
 
 <p align="center">
-  <img src="assets/Image/LoginPage.png" width="30%">
-  <img src="assets/Image/RegisterPage.png" width="30%">
+  <img src="assets/Image/LoginPage.png" width="20%">
+  <img src="assets/Image/RegisterPage.png.png" width="20%">
 </p>
