@@ -39,7 +39,10 @@ flutter pub get
 # Run the project
 flutter run
 
+```
+## 📸 Preview  
 
-![Tela de Login](assets/Image/LoginPage.png)
-
-![Tela de Registrar](assets/Image/RegisterPage.png)
+<p align="center">
+  <img src="LoginPage.png" width="30%">
+  <img src="RegisterPage.png" width="30%">
+</p>
