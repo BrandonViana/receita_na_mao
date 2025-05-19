@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'package:projetopet/common/constants/app_colors.dart';
-import 'package:projetopet/features/Login/login_page.dart';
+import 'package:receitanamao/common/constants/app_colors.dart';
+import 'package:receitanamao/features/Login/login_page.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});

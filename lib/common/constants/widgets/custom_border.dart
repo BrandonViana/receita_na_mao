@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:projetopet/common/constants/app_colors.dart';
+import 'package:receitanamao/common/constants/app_colors.dart';
 
 class CustomBorder {
   static InputDecoration build(

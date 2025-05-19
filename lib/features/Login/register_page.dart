@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:projetopet/common/constants/app_colors.dart';
-import 'package:projetopet/common/constants/app_text_styles.dart';
-import 'package:projetopet/common/constants/widgets/custom_border.dart';
-import 'package:projetopet/common/constants/widgets/password_field.dart';
-import 'package:projetopet/common/constants/widgets/second_button.dart';
-import 'package:projetopet/features/Login/login_page.dart';
+import 'package:receitanamao/common/constants/app_colors.dart';
+import 'package:receitanamao/common/constants/app_text_styles.dart';
+import 'package:receitanamao/common/constants/widgets/custom_border.dart';
+import 'package:receitanamao/common/constants/widgets/password_field.dart';
+import 'package:receitanamao/common/constants/widgets/second_button.dart';
+import 'package:receitanamao/features/servicos/authentication_service.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -19,6 +19,8 @@ class _RegisterPageState extends State<RegisterPage> {
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   bool isChecked = false;
+
+  final AuthenticationService _autenservi = AuthenticationService();
 
   @override
   Widget build(BuildContext context) {
@@ -164,11 +166,21 @@ class _RegisterPageState extends State<RegisterPage> {
                     padding: const EdgeInsets.all(16.0),
                     child: SecondButton(
                       text: "Registrar",
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => LoginPage()),
-                        );
+                      onPressed: () async {
+                        String name = _emailController.text;
+                        String email = _emailController.text;
+                        String password = _passwordController.text;
+                        if (_formKey.currentState!.validate()) {
+                          if (isChecked) {
+                            print("Entrada Válidada:");
+                            print("Nome: ${_nameController.text}");
+                            print("Email: ${_emailController.text}");
+                            print("Senha: ${_passwordController.text}");
+                            _autenservi.registerUser(name: name, password: password, email: email);
+                          } else {
+                            print("Form inválido.");
+                          }
+                        }
                       },
                     ),
                   ),

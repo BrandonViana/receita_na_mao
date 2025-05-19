@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:projetopet/common/constants/app_colors.dart';
-import 'package:projetopet/common/constants/app_text_styles.dart';
+import 'package:receitanamao/common/constants/app_colors.dart';
+import 'package:receitanamao/common/constants/app_text_styles.dart';
 
 class PrimaryButton extends StatelessWidget {
   final VoidCallback? onPressed;

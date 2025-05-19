@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "141109130044",
+    "project_id": "receitanamao-75381",
+    "storage_bucket": "receitanamao-75381.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141109130044:android:809fb35f4b0e847b61a439",
+        "android_client_info": {
+          "package_name": "com.example.receitanamao"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQXnJvXgF-xqGoD3clmhZq-65ivsrNOFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

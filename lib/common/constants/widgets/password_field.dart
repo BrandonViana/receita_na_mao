@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:projetopet/common/constants/app_colors.dart';
-import 'package:projetopet/common/constants/widgets/custom_border.dart';
+import 'package:receitanamao/common/constants/app_colors.dart';
+import 'package:receitanamao/common/constants/widgets/custom_border.dart';
 
 class PasswordField extends StatefulWidget {
   final String label;

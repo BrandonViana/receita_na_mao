@@ -1,4 +1,4 @@
-name: projetopet
+name: receitanamao
 description: "A new Flutter project."
 publish_to: 'none'
 
@@ -12,6 +12,8 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.8
   flutter_signin_button: ^2.0.0
+  firebase_core: ^3.13.0
+  firebase_auth: ^5.5.3
 
 dev_dependencies:
   flutter_test:

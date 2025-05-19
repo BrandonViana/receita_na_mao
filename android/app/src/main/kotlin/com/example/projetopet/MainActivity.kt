@@ -1,4 +1,4 @@
-package com.example.projetopet
+package com.example.receitanamao
 
 import io.flutter.embedding.android.FlutterActivity
 
