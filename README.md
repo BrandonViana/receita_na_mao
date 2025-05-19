@@ -38,3 +38,8 @@ flutter pub get
 
 # Run the project
 flutter run
+
+
+![Tela de Login](assets/Image/LoginPage.png)
+
+![Tela de Registrar](assets/Image/RegisterPage.png)
