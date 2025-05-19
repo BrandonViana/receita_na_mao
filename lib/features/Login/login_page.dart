@@ -5,6 +5,7 @@ import 'package:receitanamao/common/constants/app_text_styles.dart';
 import 'package:receitanamao/common/constants/widgets/custom_border.dart';
 import 'package:receitanamao/common/constants/widgets/password_field.dart';
 import 'package:receitanamao/common/constants/widgets/second_button.dart';
+import 'package:receitanamao/features/pages/first_page.dart';
 import 'package:receitanamao/features/splash/splash_page.dart';
 import 'register_page.dart';
 
@@ -37,26 +38,13 @@ class _LoginPageState extends State<LoginPage> {
                 padding: const EdgeInsets.all(20),
                 child: Column(
                   children: [
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: InkWell(
-                        onTap: () => Navigator.pop(context),
-                        borderRadius: BorderRadius.circular(50),
-                        child: Padding(
-                          padding: const EdgeInsets.all(8),
-                          child: Image.asset(
-                            "assets/Image/left.png",
-                            width: 25,
-                            height: 25,
-                          ),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 5),
+                    const SizedBox(
+                      height: 5,
+                    ), 
                     Image.asset(
                       'assets/Image/logochefe.png',
-                      height: 300,
-                      width: 300,
+                      height: 320,
+                      width: 320,
                     ),
                     const SizedBox(height: 5),
                     Text(
@@ -126,11 +114,18 @@ class _LoginPageState extends State<LoginPage> {
                                 ),
                               ),
                             ),
-                            const SizedBox(height: 20),
+                            const SizedBox(height: 40),
                             SecondButton(
                               text: 'Entrar',
                               onPressed: () {
-                                if (_formKey.currentState!.validate()) {}
+                                if (_formKey.currentState!.validate()) {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => const FirstPage(),
+                                    ),
+                                  );
+                                }
                               },
                             ),
                           ],
