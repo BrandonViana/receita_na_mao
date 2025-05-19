@@ -42,7 +42,9 @@ flutter run
 ```
 ## 📸 Preview  
 
-<p align="center">
-  <img src="assets/Image/LoginPage.png" width="20%">
-  <img src="assets/Image/RegisterPage.png" width="20%">
-</p>
+<table>
+  <tr>
+    <td><img src="assets/Image/LoginPage.png" width="300"/></td>
+    <td><img src="assets/Image/RegisterPage.png" width="300"/></td>
+  </tr>
+</table>
